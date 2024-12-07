@@ -91,8 +91,8 @@ figcaption {
 }
 
 #picture {
-  width: 400px;
-  height: 400px;
+  width: 220px;
+  height: 220px;
 }
 
 .position-container {
@@ -116,7 +116,7 @@ figcaption {
   .cinnagif {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 90%;
     transform: translate(-50%, -50%); /* Adjust for the image's size */
     width: 200px;
   }
