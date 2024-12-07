@@ -1,0 +1,431 @@
+/* Student Name: Jade Adeniji-Adele
+Date: 09/17/2024
+File Name: styles.css */
+
+/* CSS Reset */
+body, header, nav, nav a, nav ul, main, footer, h1, div, img, article, section, aside, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #fae8fa;
+}
+
+/* Header, nav, main, footer begin here */
+header {
+    background-color: #fae8fa;
+    padding: 1%;
+    text-align: center;
+    text-shadow: 1px 1px 3px #222222;
+}
+
+nav {
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007caa;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Stretch footer across the viewport */
+    background-color: 0;
+    color: white;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+.img {
+    max-width: 100%;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px #222222;
+}
+
+.link {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+#content {
+    background-color: #ffffff;
+}
+
+figcaption {
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+}
+
+.centermap {
+  position: relative;
+}
+
+#introduction {
+  text-align: center;
+}
+
+.umai {
+  position: relative;
+  text-align: center;
+}
+
+#picture {
+  width: 400px;
+  height: 400px;
+}
+
+.position-container {
+    position: relative;
+    height: 30vh; /* Full viewport height */
+  }
+
+.centered-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Adjust for the image's size */
+    width: 200px; /* Optional: Set a width */
+  }
+
+  .cinnamoroll {
+        margin: 0; /* Remove default margin */
+        height: 100vh; /* Ensure the body takes up the full viewport height */
+  }
+
+  .cinnagif {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Adjust for the image's size */
+    width: 200px;
+  }
+
+  .cinna {
+    font-size: 30px;
+    font-weight: 100;
+    color: #deaaff;
+  }
+
+  .cinnap {
+    color: #deaaff;
+    font-size: 25px;
+  }
+
+  .cinnafacts {
+    font-size: 30px;
+    color: #9381ff;
+    text-shadow: 1px 1px 3px #bc92d6;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .cinnamerch {
+    font-size: 32px;
+    color: #957fef;
+    display: inline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .cinnagrid {
+    display: inline-block;
+  }
+
+  .food {
+    font-size: 60px;
+  }
+
+/* Food Slideshow Start */
+
+  .foodslideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #f4f4f4;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #ffffff;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #222222;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #000000;
+  }
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/* Mobile View: Below 767px */
+@media screen and (max-width: 767px) {
+    .mobile {
+        display: block;
+    }
+    
+    table {
+        display: none;
+    }
+
+    .mobile-list {
+        display: block;
+    }
+
+    .mobile-list li {
+        background-color: #f9f9f9;
+        padding: 15px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+    }
+
+    .mobile-list li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Tablet View: Between 768px and 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Style the table */
+    table {
+        display: table;
+        width: 90%; /* Set table width for tablet */
+        margin: 20px auto;
+        border-collapse: collapse; /* Make table borders collapse */
+    }
+
+    table th, table td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd; /* Add borders to cells */
+    }
+
+    table th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+    }
+
+    /* Make table rows responsive */
+    table tr:hover {
+        background-color: #f9f9f9;
+    }
+
+    nav a:hover {
+        color: #007BFF;
+        background-color: #ffffff;
+    }
+}
+
+/* Desktop View: Above 1024px */
+@media screen and (min-width: 600px) {
+    .tab-desk {
+        display: block;
+    }
+
+    table {
+        display: table;
+        width: 80%; /* Set table width for desktop */
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    table th, table td {
+        padding: 15px; /* More padding for better readability */
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    table th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+    }
+
+    table tr:hover {
+        background-color: #f9f9f9;
+    }
+
+    nav a:hover {
+        color: #007BFF;
+        background-color: #ffffff;
+    }
+}
+
+/* Hamburger menu styles */
+.hamburger {
+   display: none; /* Hidden by default */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Mobile View: Below 767px */
+@media screen and (max-width: 767px) {
+    .hamburgermenu {
+        display: block; /* Show hamburger menu icon on mobile */
+    }
+    
+    /* Hides the navigation menu */
+    #hamburgermenu {
+        display: none;
+    }
+
+    /* Style for the navigation menu when shown */
+    #hamburgermenu.open {
+        display: block;
+    }
+
+    #hamburgermenu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #hamburgermenu ul li {
+        background-color: #f9f9f9;
+        padding: 15px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+    }
+
+    #hamburgermenu ul li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.clickable-image {
+    width: 100px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Hamburger Menu Styles */
+  .hamburger-menu {
+    padding: 10px;
+  }
+  
+  .menu-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  
+  /* Menu Links */
+  .menu-links {
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    display: none; /* Hidden by default */
+  }
+  
+  .menu-links li {
+    margin: 5px 0;
+  }
+  
+  .menu-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .menu-links a:hover {
+    color: #007BFF; /* Add a hover effect */
+  }
