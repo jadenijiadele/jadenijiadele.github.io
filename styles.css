@@ -48,7 +48,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%; /* Stretch footer across the viewport */
-    background-color: 0;
+    background-color: transparent;
     color: white;
     text-align: left;
     padding: 10px 0;
